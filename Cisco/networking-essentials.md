@@ -67,3 +67,4 @@ The performnce can slow down as they are acting as clients and servers at the sa
 ***
 # Network components
 ![](2021-08-06-16-00-18.png)
+The network infrastructure contains three categories of hardware components: **intermediate devices, end devices, and network media**. Devices and media are the physical elements, or hardware, of the network. Hardware is often the visible components of the network platform such as a laptop, PC, switch, router, wireless access point, or the cabling used to connect the devices. The network devices that people are most familiar with are called end devices, or hosts. These devices form the interface between users and the underlying communication network. An end device (or host) is either the source or destination of a message transmitted over the network.
