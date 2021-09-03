@@ -67,3 +67,5 @@ The performnce can slow down as they are acting as clients and servers at the sa
 ***
 # Network components
 ![](2021-08-06-16-00-18.png)
+
+# Wireless Networks
