@@ -101,3 +101,44 @@ CREATE TABLE users(
 ```
 ![](2021-09-09-00-47-49.png)
 ![](2021-09-09-00-51-53.png)
+# INSERT
+``````
+INSERT INTO <tname> (<field1> <field2>) VALUES (<value1> <value2>)   
+);
+
+// example
+
+INSERT INTO users( name, email) VALUES ('Tom', 'tom@gmail.com');
+``````
+# DELETE
+``````
+DELETE FROM users WHERE email='tom@gmail.com';
+``````
+# UPDATE
+``````
+UPDATE users SET email='tom.updated@gmail.com' WHERE name='Tom';
+``````
+# ORDER BY
+``````
+SELECT * FROM users ORDER BY email ASC/DESC;
+``````
+# LIKE
+``````
+SELECT * FROM users WHERE email LIKE '%o%';
+``````
+**%** is a wildcard
+# LIMIT/OFFSET
+First n rows from begginning 
+``````
+SELECT * FROM users ORDER BY email DESC LIMIT 3;
+``````
+or after skipping some rows
+``````
+SELECT * FROM users ORDER BY email OFFSET LIMIT 3;
+``````
+# COUNT
+Retrieve the count of the rows instead if the content 
+``````
+SELECT COUNT(*) FROM users;
+SELECT COUNT(*) FROM users WHERE email='tim@mail.com';
+``````
