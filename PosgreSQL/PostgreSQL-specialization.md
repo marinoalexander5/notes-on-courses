@@ -153,7 +153,20 @@ SELECT COUNT(*) FROM users WHERE email='tim@mail.com';
 > Add a special **key** column to each table to reference to  
 
 ![](2021-09-10-10-12-07.png)
+# JOIN
+### INNER JOIN
+- Links across several tables
+- Need to specify hoe to use keys using an **ON** clause
+```
+SELECT album.title, artist.name 
+FROM album JOIN artist 
+ON album.artist_id = artist.id
+```
+![](2021-09-17-13-07-49.png)
+### CROSS JOIN
+Get all combinations unfiltered (no **ON** clause)
 
-## Excercise
-![](2021-09-10-14-10-05.png)
-
+# ON DELETE choices
+- **DEFARLUT / RESTRICT** Don't allow changes that restrict the constraint
+- **CASCADE** Adjust child rows by reomving or updating to maintain consistency
+- **SET NULL** Set the foreign key columns in the child rows to null
