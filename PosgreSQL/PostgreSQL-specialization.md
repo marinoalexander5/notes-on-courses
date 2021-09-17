@@ -142,3 +142,18 @@ Retrieve the count of the rows instead if the content
 SELECT COUNT(*) FROM users;
 SELECT COUNT(*) FROM users WHERE email='tim@mail.com';
 ``````
+***
+# Relational Database Design
+> DON'T REPLICATE STRING DATA IN A SAME FIELD (Vertical replication)
+### **Primary Key:** integer-auto increment (tablname_id). 
+### **Logical Key:** what users use for lookup
+### **Foreign Key:** integer pointing to a row on another table
+> Integer primary keys ae what makes databases work fast, avoid setting strings as PKs or foreign keys 
+
+> Add a special **key** column to each table to reference to  
+
+![](2021-09-10-10-12-07.png)
+
+## Excercise
+![](2021-09-10-14-10-05.png)
+
